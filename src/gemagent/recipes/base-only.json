@@ -1,0 +1,1 @@
+{"name":"base-only","description":"Official gapseq find/find-transport/draft/medium/fill only; no review skills.","steps":["gapseq.find","gapseq.find-transport","gapseq.draft","gapseq.medium","gapseq.fill"]}

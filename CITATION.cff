@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "GEMAgent: Automated Curation of Genome-Scale Metabolic Models using Specialized Multi-Agent Review"
+type: software
+version: "0.2.0"
+date-released: "2026-11-04"
+authors:
+  - family-names: "Ding"
+    given-names: "Yi"
+  - family-names: "Li"
+    given-names: "Zeming"
+  - family-names: "Zhang"
+    given-names: "Lu"
+    email: "ericluzhang@hkbu.edu.hk"
+license: "MIT"
+abstract: >-
+  Evidence-guided review agents for biomass reactions, gapfill additions,
+  gene-protein-reaction associations, and uptake/secretion predictions in
+  genome-scale metabolic models.

@@ -1,0 +1,1 @@
+{"name":"full","description":"Official gapseq base plus biomass, gapfill, GPR, positive literature expansion, and model-consistency pruning.","steps":["gapseq.find","gapseq.find-transport","gapseq.draft","kofam","gapseq.medium","biomass","gapseq.fill","gapfill-review","gpr","us-review-expand","us-review-prune"]}
