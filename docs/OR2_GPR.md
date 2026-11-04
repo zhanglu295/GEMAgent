@@ -30,16 +30,3 @@ selected reaction fails, the stage exits non-zero.
 
 LLM credentials are read from `LLM_ENV_FILE` or the repository-root `.env`.
 No credentials are stored in the evaluation archive.
-
-## Validation status
-
-The complete core Python test suite passes (61 tests), including REMOVE-only
-application, all-REMOVE protection, empty-cohort handling without credentials,
-missing-credential failure for a selected cohort, and FBC/notes-style writers.
-
-A model-level no-candidate smoke test was run on an archived gapseq model. It
-completed SBML/RDS/sybil export and returned `ALL_PASS=YES`; the output XML was
-byte-identical to the input. No LLM review, model reconstruction, GE benchmark,
-or figure generation was run during the v1 -> v2 migration. The archived OR2
-results remain the evidence for the strategy itself, not a new validation of
-this repackaged implementation.

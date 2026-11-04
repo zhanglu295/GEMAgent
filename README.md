@@ -58,7 +58,7 @@ For the complete Python and R environment used by the project, use the provided
 ### Local Python environment
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/zhanglu295/GEMAgent.git
 cd GEMAgent
 
 python -m venv .venv
@@ -67,13 +67,6 @@ source .venv/bin/activate       # Windows: .venv\Scripts\activate
 python -m pip install --upgrade pip
 python -m pip install -e .
 gemagent --help
-```
-
-Install development dependencies and run the test suite:
-
-```bash
-python -m pip install -e ".[dev]"
-pytest
 ```
 
 ### Docker
@@ -305,9 +298,8 @@ Exact intermediate filenames depend on which review stages are enabled. See
 
 ```text
 .
-├── docs/                 Architecture, data, configuration, and validation notes
+├── docs/                 Architecture, data, and configuration notes
 ├── src/gemagent/         Python package and model-review implementations
-├── tests/                Unit and protocol tests
 ├── Dockerfile            Reproducible gapseq + Python+R environment
 ├── pyproject.toml        Package metadata and dependencies
 └── .env.example          Public configuration template
@@ -320,7 +312,6 @@ Exact intermediate filenames depend on which review stages are enabled. See
 - [Evidence data](docs/DATA.md)
 - [GPR review protocol](docs/OR2_GPR.md)
 - [Output contract](docs/OUTPUTS.md)
-- [Validation summary](docs/VALIDATION.md)
 
 ## Reproducibility
 
@@ -330,14 +321,6 @@ Exact intermediate filenames depend on which review stages are enabled. See
 - Decision tables retain the evidence and model context used by each review.
 - Outputs are written to stable workspace paths so downstream evaluation does
   not depend on local absolute paths.
-- The test suite can run without LLM credentials where the reviewed code path is
-  not exercised.
-
-## Reporting issues and contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for development setup and pull-request
-guidance. Report security-sensitive issues according to
-[`SECURITY.md`](SECURITY.md).
 
 ## Citation
 
